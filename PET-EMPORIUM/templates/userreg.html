@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Paws & Claws: The Premier Pet Emporium</title>
+	<link rel="stylesheet" href="{{ url_for('static',     filename='css/userreg.css') }}">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<img src="https://i.postimg.cc/7PMDRR1j/logo-2.png" alt="">
+			</div>
+	<ul class="nav-area">
+	<li><a href="{{ url_for('home') }}">Home</a></li>
+	<li><a href="{{ url_for('userlogin') }}">sign in</a></li>
+	<li><a href="{{ url_for('about') }}">About Us</a></li>
+	<li><a href="{{ url_for('contact') }}">Contact</a></li>
+	</ul>
+	</div>
+	<div class="Login-box">
+		<h2>User Registration</h2>
+		<p style="text-align:center">{{ msg }}</p>
+		<form action="/userreg1" method="POST">
+			<div class="user-box">
+				<input type="text" name="username" id="username" required="">
+				<label for="">Username</label>
+			</div>
+            <div class="user-box">
+				<input type="email" name="email" id="email" required="">
+				<label for="">Email</label>
+            </div>    
+			<div class="user-box">
+				<input type="password" name="password" id="password" required="">
+				<label for="">Password</label>
+			</div>
+			<button ><div class="box"><input type="submit" class="btn" value="SIGN IN"></div>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</form>
+		
+		<div class="login_signup">Already have an account? <a href="{{ url_for('userlogin') }}" id="signin">Sign in</a></div>
+		<div class="login_merchant">If you are a Merchant > <a href="{{ url_for('merchantlogin') }}" id="merchantsignup">click here</a></div>
+	
+	
+	</div>
+	</header>
+	
+	
+</body>
+</html>

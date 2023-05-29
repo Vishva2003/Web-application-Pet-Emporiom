@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Paws & Claws: The Premier Pet Emporium</title>
+	<link rel="stylesheet" href="{{ url_for('static',     filename='css/contact.css') }}">
+
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<img src="https://i.postimg.cc/7PMDRR1j/logo-2.png" alt="">
+			</div>
+	<ul class="nav-area">
+	<li><a href="{{ url_for('home') }}">Home</a></li>
+	<li><a href="{{ url_for('userlogin') }}">sign in</a></li>
+	<li><a href="{{ url_for('about') }}">About us</a></li>
+	</ul>
+	</div>
+	<div class="Login-box">
+		<h2>Contact US</h2>
+		<p style="text-align:center">{{ msg }}</p>
+		<form action="/contact1" method="POST">
+			<div class="user-box">
+				<input type="text" name="username" id="" required="">
+				<label for="">Username</label>
+			</div>
+			<div class="user-box">
+				<input type="email" name="email" id="" required="">
+				<label for="">Email</label>
+			</div>
+            <div class="user-box1">
+    
+				<input type="text" style="height:100px; width:350px;" name="message" id="" required="">
+				<label for="">Message</label>
+			</div>
+
+			<button ><div class="box"><input type="submit" class="btn" value="Post It!"></div>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</form>
+	</header>
+	
+	
+</body>
+</html>

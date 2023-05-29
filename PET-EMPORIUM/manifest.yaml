@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vishva2003/petapp
+  
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: vishva2003/petapp
+  template:
+    metadata:
+      labels:
+        app: vishva2003/petapp
+    spec:
+      containers:
+      - name: vishva2003/petapp
+        image: us.icr.io/vishva/petapp
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000

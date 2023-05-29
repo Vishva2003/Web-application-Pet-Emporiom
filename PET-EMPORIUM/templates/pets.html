@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Paws & Claws: The Premier Pet Emporium</title>
+	<link rel="stylesheet" href="{{ url_for('static',     filename='css/pets.css') }}">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<img src="https://i.postimg.cc/7PMDRR1j/logo-2.png" alt="">
+			</div>
+	<ul class="nav-area">
+	<li><a href="{{ url_for('home') }}">Home</a></li>
+	<li><a href="{{ url_for('adminlogin') }}">Admin's Signin</a></li>
+	<li><a href="{{ url_for('about') }}">About Us</a></li>
+	<li><a href="{{ url_for('logout') }}">Log out</a></li>
+	</ul>
+	</div>
+	<div class="Login-box">
+		<h2>Upload Image</h2>
+		<p style="text-align:center">{{ msg }}</p>
+        <form action="/pets1" enctype="multipart/form-data" method="POST">
+            <div class="user-box">
+				<input type="text" name="description" size="30" required="">
+				<label for="">Description</label>
+			</div>
+            <div class="user-box">
+				<input type="file" name="image" accept="image/*" onchange="loadfile(event)" required="">
+				<label for=""></label>
+			</div>
+			<div class="user-box">
+				<input type="number" name="price_range" id="price_range" required="">
+				<label for="">Price_range</label>
+			</div>
+			<div class="user-box">
+				<input type="text" name="comments" id="password" required="">
+				<label for="">Comments</label>
+			</div>
+			<button ><div class="box"><input type="submit" class="btn" value="SUBMIT"></div>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</form>
+		
+	</div>
+	</header>
+	<script>
+		var loadfile = fuction(event){
+			var image = document.getElementbyId("output");
+			image.src= URL.createObjectURL(event.target.files[0])
+		};
+	</script>
+	
+	
+</body>
+</html>

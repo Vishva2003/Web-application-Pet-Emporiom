@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Paws & Claws: The Premier Pet Emporium</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static',     filename='css/product.css') }}">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<img src="https://i.postimg.cc/7PMDRR1j/logo-2.png" alt="">
+			</div>
+	<ul class="nav-area">
+	<li><a href="{{ url_for('home') }}">Home</a></li>
+	<li><a href="{{ url_for('pets') }}">Upload Image</a></li>
+	<li><a href="{{ url_for('logout') }}">logout</a></li>
+	</ul>
+	</div>
+	
+<div class="row1">
+<ul class="listing">
+  <li class="product">
+    <a class="img-wrapper" href="#">
+      <img src="https://i.postimg.cc/RVQ5rZ80/Spitz-Pet-Dog-4-K-Ultra-HD-Mobile-Wallpaper.jpg" alt="" />
+    </a>
+    
+    <div class="info">
+      <div class="title">Pomeranian</div>
+      <div class="price">₹5,000</div>
+    </div>
+    
+    <div class="actions-wrapper">
+      <a href="#" class="add-btn wishlist">Wishlist</a>
+      <a href="#" class="add-btn cart">Cart</a>
+    </div>
+  </li>
+  <li class="product">
+    <a class="img-wrapper" href="#">
+      <img src="https://i.postimg.cc/632VRTRL/Cute-Pet-Cat-Playing-4-K-Ultra-HD-Mobile-Wallpaper.jpg" alt="" />
+    </a>
+    
+    <div class="info">
+      <div class="title">Turkish Angorais</div>
+      <div class="price">₹21,417</div>
+    </div>
+    
+    <div class="actions-wrapper">
+      <a href="#" class="add-btn wishlist">Wishlist</a>
+      <a href="#" class="add-btn cart">Cart</a>
+    </div>
+  </li>
+  <li class="product">
+    <a class="img-wrapper" href="#">
+      <img src="https://i.postimg.cc/VLBqXxST/2vY7mw.jpg" alt="" />
+    </a>
+
+    
+    <div class="info">
+      <div class="title"><a href="#">Corgi</a></div>
+      <div class="price sale">₹25,000</div>
+      <div class="price old">₹45,000</div>
+    </div>
+    
+    <div class="actions-wrapper">
+      <a href="#" class="add-btn wishlist">Wishlist</a>
+      <a href="#" class="add-btn cart">Cart</a>
+    </div>
+  </li>
+</ul>
+</div>
+<div class="row2">
+<ul class="listing1">
+	<li class="product">
+	  <a class="img-wrapper" href="#">
+		<img src="https://i.postimg.cc/zfJH8v0X/thumb-1920-884180.jpg" alt="" />
+	  </a>
+	  
+	  <div class="info">
+		<div class="title">Border Collie</div>
+		<div class="price">₹20,000</div>
+	  </div>
+	  
+	  <div class="actions-wrapper">
+		<a href="#" class="add-btn wishlist">Wishlist</a>
+		<a href="#" class="add-btn cart">Cart</a>
+	  </div>
+	</li>
+	<li class="product">
+	  <a class="img-wrapper" href="#">
+		<img src="https://i.postimg.cc/sftcyPSj/The-Himalayan-Himalayan-Persian-or-Colourpoint-Persian-as-it-is-commonly-referred-to-in-Europe-is.jpg" alt="" />
+	  </a>
+	  
+	  <div class="info">
+		<div class="title">Himalayan Persian</div>
+		<div class="price">₹7000</div>
+	  </div>
+	  
+	  <div class="actions-wrapper">
+		<a href="#" class="add-btn wishlist">Wishlist</a>
+		<a href="#" class="add-btn cart">Cart</a>
+	  </div>
+	</li>
+	<li class="product">
+	  <a class="img-wrapper" href="#">
+		<img src="https://i.postimg.cc/FH1sZSWS/800px-American-bobtail-2.jpg" alt="" />
+	  </a>
+  
+	  
+	  <div class="info">
+		<div class="title"><a href="#">American bobtail</a></div>
+		<div class="price sale">₹40,000</div>
+		<div class="price old">₹60,000</div>
+	  </div>
+	  
+	  <div class="actions-wrapper">
+		<a href="#" class="add-btn wishlist">Wishlist</a>
+		<a href="#" class="add-btn cart">Cart</a>
+	  </div>
+	</li>
+  </ul>
+</div>  
+	</header>
+	
+	
+</body>
+</html>

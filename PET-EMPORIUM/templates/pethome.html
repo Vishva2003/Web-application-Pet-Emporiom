@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Paws & Claws: The Premier Pet Emporium</title>
+	<link rel="stylesheet" href="{{ url_for('static',     filename='css/pethome.css') }}">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<img src="https://i.postimg.cc/7PMDRR1j/logo-2.png" alt="">
+			</div>
+	<ul class="nav-area">
+	<li><a href="{{ url_for('home') }}">Home</a></li>
+	<li><a href="{{ url_for('userlogin') }}">sign in</a></li>
+	<li><a href="{{ url_for('merchantlogin') }}">Merchant's login</a></li>
+	</ul>
+	</div>
+	<div class="welcome-text">
+			<h1><b>Welcome to Pet & Claws</b></h1>
+			<p> Discover a world of possibilities for you and your beloved furry companions. Whether you're a proud pet owner, an animal enthusiast, or simply seeking valuable resources, you've come to the right place.</p>
+			<a href="{{ url_for('contact') }}">Contact US</a>
+		</div>
+	</header>
+	
+	
+</body>
+</html>

@@ -1,0 +1,6 @@
+mysql-connector-python>=8.0.26
+flask>=2.0.0
+ibm-cos-sdk
+boto3==1.26
+ibm-cos-sdk-core
+ibm-cos-sdk-s3transfer
